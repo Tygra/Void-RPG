@@ -85,6 +85,8 @@ namespace VoidRPG
         #region Config
         public class Contents
         {
+            public bool SEconomy = true;
+
             public int startermage = 3069;
             public int starterwarrior = 280;
             public int starterranger = 3492;
@@ -92,6 +94,15 @@ namespace VoidRPG
             public int startercd = 10800;
 
             public int facepalmcd = 30;
+
+            public int buff1cd = 60;
+            public int buff2cd = 60;
+            public int buff3cd = 60;
+            public int buff4cd = 60;
+            public int buff1cost = 150;
+            public int buff2cost = 200;
+            public int buff3cost = 350;
+            public int buff4cost = 500;
         }
         #endregion
 

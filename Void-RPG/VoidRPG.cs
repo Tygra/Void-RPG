@@ -115,6 +115,22 @@ namespace VoidRPG
                     {
                         player.facepalmcd--;
                     }
+                    if (player.buff1cd > 0)
+                    {
+                        player.buff1cd--;
+                    }
+                    if (player.buff2cd > 0)
+                    {
+                        player.buff2cd--;
+                    }
+                    if (player.buff3cd > 0)
+                    {
+                        player.buff3cd--;
+                    }
+                    if (player.buff4cd > 0)
+                    {
+                        player.buff4cd--;
+                    }
                 }
             }
         }
@@ -463,7 +479,11 @@ namespace VoidRPG
                 #region Lite
                 case "lite":
                     {
-
+                        args.Player.SendMessage("You are allowed to have a 12x15 house with 7 storage containers.", Color.Goldenrod);
+                        args.Player.SendMessage("You can join anytime, even if the server if full.", Color.SkyBlue);
+                        args.Player.SendMessage("Terrarian rank name.", Color.SkyBlue);
+                        args.Player.SendMessage("Full leveling experience with trials and leveling rewards.", Color.SkyBlue);
+                        args.Player.SendMessage("You can start invasion with items from level 20", Color.SkyBlue);
                     }
                     break;
                 #endregion
@@ -786,11 +806,8 @@ namespace VoidRPG
                 case "itemdrop":
                     {
                         args.Player.SendMessage("------------------------ Item Drop Rules ------------------------", Color.Goldenrod);
-                        args.Player.SendMessage("Info: You are only allowed to give away vanity, furniture, consumables, money and ammo.", Color.SkyBlue);
-                        args.Player.SendMessage("Info: Every item has a tooltip. Check it before dropping.", Color.SkyBlue);
-                        args.Player.SendMessage("Info: Treasure bags are not allowed to be given away.", Color.SkyBlue);
-                        args.Player.SendMessage("Info: Use /trade to exchange items with others.", Color.SkyBlue);
-                        args.Player.SendMessage("Press enter to scroll the chat.", Color.Goldenrod);
+                        args.Player.SendMessage("Info: You can't drop items on the server. Rebind your drop key.", Color.SkyBlue);
+                        args.Player.SendMessage("Info: We can't help you with lost items.", Color.SkyBlue);
                     }
                     break;
                     #endregion

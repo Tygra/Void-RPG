@@ -28,6 +28,10 @@ namespace VoidRPG
 
         public int facepalmcd { get; set; }
         public int startercd { get; set; }
+        public int buff1cd { get; set; }
+        public int buff2cd { get; set; }
+        public int buff3cd { get; set; }
+        public int buff4cd { get; set; }
 
         public VPlayer(int index)
         {
